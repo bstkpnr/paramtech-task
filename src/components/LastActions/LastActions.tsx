@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import styles from './LastMoves.style';
+import styles from './LastActions.style';
+import Colors from '../../utils/color';
 
 interface Props {
   icon: React.ReactNode;
@@ -8,13 +9,21 @@ interface Props {
   action: string;
   date: string;
   amount: string;
+  lastBorder: boolean;
 }
 
-const LastMoves: React.FC<Props> = ({icon, name, action, date, amount}) => {
-    const amountPositive=amount.startsWith("+");
+const LastActions: React.FC<Props> = ({
+  icon,
+  name,
+  action,
+  date,
+  amount,
+  lastBorder,
+}) => {
+  const amountPositive = amount.startsWith('+');
   return (
     <View style={styles.container}>
-      <View style={styles.details}>
+      <View style={[styles.details, lastBorder && {borderBottomWidth: 0}]}>
         <View style={styles.userDetails}>
           <View style={styles.userIcon}>{icon}</View>
           <View style={styles.userInfo}>
@@ -23,9 +32,15 @@ const LastMoves: React.FC<Props> = ({icon, name, action, date, amount}) => {
             <Text style={styles.userAction}>{date}</Text>
           </View>
         </View>
-        <Text style={[styles.amount,{color:amountPositive ? '#4E6C35' : '#000'}]}>{amount}</Text>
+        <Text
+          style={[
+            styles.amount,
+            {color: amountPositive ? Colors.green100 : Colors.neutral100},
+          ]}>
+          {amount}
+        </Text>
       </View>
     </View>
   );
 };
-export default LastMoves;
+export default LastActions;

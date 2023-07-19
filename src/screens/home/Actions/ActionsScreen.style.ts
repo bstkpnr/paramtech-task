@@ -35,7 +35,20 @@ export default StyleSheet.create({
     backgroundColor: Colors.neutrol0,
     borderColor: Colors.neutrol20,
     bottom: 10,
- 
+  },
+  boxEmpty: {
+    display: 'flex',
+    width: 320,
+    margin: 20,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: 10,
+    backgroundColor: Colors.neutrol0,
+    borderColor: Colors.neutrol20,
+    bottom: 10,
+    height: 300,
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   innerBox: {
     flexDirection: 'column',
@@ -43,7 +56,7 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
 
-  centeredText: {
+  boxText: {
     textAlign: 'center',
     color: Colors.neutrol60,
     fontSize: 14,

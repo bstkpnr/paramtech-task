@@ -10,6 +10,9 @@ const Colors={
     neutrol70:'#7D8E9F',
     primary140:'#2A0C55',
     secondary100:'#00BBB4',
+    neutrol10:'#F5F6F9',
+    green100:'#4E6C35',
+    neutral100:'#000'
     
 
 

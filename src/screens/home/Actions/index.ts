@@ -1,1 +1,1 @@
-export {default} from './LastActions'
+export {default} from './ActionsScreen'

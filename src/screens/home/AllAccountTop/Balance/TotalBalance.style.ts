@@ -3,7 +3,7 @@ import Colors from '../../../../utils/color';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    top: 31,
+    bottom:31,
     flexShrink: 0,
   },
   topContent: {
@@ -13,7 +13,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  smallText: {
+  totalBalanceText: {
     color: Colors.access70,
     fontSize: 10,
     fontFamily: 'Mark-Pro',
@@ -29,14 +29,14 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf:'center'
   },
-  largeText: {
+  balanceText: {
     color: Colors.neutrol0,
     fontSize: 32,
     fontFamily: 'Mark-Pro',
     fontWeight: '500',
     lineHeight: 40,
   },
-  mediumText: {
+  smallBalanceText: {
     color: Colors.neutrol0,
     fontSize: 20,
     fontFamily: 'Mark-Pro',

@@ -14,7 +14,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     borderBottomWidth: 1,
-    borderColor: 'red',
+    borderColor:Colors.neutrol10,
     paddingBottom:12
     
   },

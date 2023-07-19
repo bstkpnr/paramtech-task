@@ -1,19 +1,14 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import {View} from 'react-native';
 import styles from './Main.style';
-
-import LastActions from '../Actions';
-import Top from '../Top';
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Main: React.FC<LayoutProps> = ({children}) => {
+import ActionsScreen from '../Actions';
+import AllAccountTop from '../AllAccountTop/AllAccountTop';
+const Main: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Top />
-      <View style={{padding: 20}}>
-        <LastActions />
+      <AllAccountTop />
+      <View style={styles.actionsContainer}>
+        <ActionsScreen />
       </View>
     </View>
   );

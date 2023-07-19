@@ -1,11 +1,11 @@
 import React, {ReactNode, useEffect, useState} from 'react';
 import {View, Text} from 'react-native';
-import styles from './LastActions.style';
+import styles from './ActionsScreen.style';
 import Filled from '../../../assets/Filled2.svg';
-import LastMoves from '../../../components/LastMoves/LastMoves';
 import Outline1 from '../../../assets/Outline1.svg';
 import Outline2 from '../../../assets/Outline2.svg';
 import Outline3 from '../../../assets/Outline3.svg';
+import LastActions from '../../../components/LastActions/LastActions';
 
 interface Actions {
   icon: ReactNode;
@@ -14,7 +14,7 @@ interface Actions {
   date: string;
   amount: string;
 }
-function LastActions() {
+function ActionsScreen() {
   const [actions, setActions] = useState<Actions[]>([]);
 
   useEffect(() => {
@@ -50,27 +50,25 @@ function LastActions() {
     <View style={styles.container}>
       <View style={styles.innerContainer}>
         <Text style={styles.titleText}>Son Hareketler</Text>
-        {actions.length > 0 && <Text style={styles.seeAll}>{"Tümü >>"}</Text>}
+        {actions.length > 0 && <Text style={styles.seeAll}>{'Tümü >>'}</Text>}
       </View>
-      <View style={[styles.box,actions.length>0 ?  { } : { height: 330, flexDirection: "column", justifyContent: "center" ,bottom:10}]}>
+      <View style={[actions.length > 0 ? styles.box : styles.boxEmpty]}>
         <View style={styles.innerBox}>
           {actions.length === 0 ? (
             <>
               <Filled />
-              <Text style={styles.centeredText}>
-                Son hareketin{'\n'}bulunmuyor.
-              </Text>
+              <Text style={styles.boxText}>Son hareketin{'\n'}bulunmuyor.</Text>
             </>
           ) : (
             actions.map((move, index) => (
-
-              <LastMoves
+              <LastActions
                 key={index}
                 icon={move.icon}
                 name={move.name}
                 action={move.action}
                 date={move.date}
                 amount={move.amount}
+                lastBorder={index === actions.length - 1}
               />
             ))
           )}
@@ -80,4 +78,4 @@ function LastActions() {
   );
 }
 
-export default LastActions;
+export default ActionsScreen;
