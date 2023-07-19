@@ -2,7 +2,6 @@ import {StyleSheet} from 'react-native';
 import Colors from '../../../utils/color';
 
 export default StyleSheet.create({
-
   container: {
     width: '100%',
     justifyContent: 'space-between',
@@ -10,6 +9,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     padding:20,
   },
+
   firstFrame: {
     display:'flex',
     width: 32,
@@ -19,6 +19,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   text: {
     display:'flex',
     justifyContent:'center',
@@ -31,6 +32,7 @@ export default StyleSheet.create({
     fontFamily: 'Mark-Pro',
     fontWeight: '500',
   },
+
   iconContainer: {
     padding: 4,
     backgroundColor:Colors.secondary100,
@@ -53,10 +55,12 @@ export default StyleSheet.create({
     top: 0.5,
     backgroundColor: Colors.neutrol0,
   },
+
   secondFrame: {
     width: 97.89,
     height: 12,
   },
+  
   thirdFrame: {
     width: 24,
     height: 24,

@@ -7,7 +7,9 @@ import LinearGradient from 'react-native-linear-gradient';
 import Navbar from '../Navbar';
 import MaskGroup from '../../../assets/MaskGroup.svg';
 import styles from './AllAccountTop.style';
+
 function AllAccountTop() {
+  
   return (
     <LinearGradient
       start={{x: 0.0, y: 0.0}}

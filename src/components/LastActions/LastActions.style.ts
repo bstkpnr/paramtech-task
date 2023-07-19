@@ -18,12 +18,14 @@ export default StyleSheet.create({
     paddingBottom:12
     
   },
+
   userDetails: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
     flexDirection: 'row',
   },
+
   userIcon: {
     width: 40,
     height: 40,
@@ -32,9 +34,11 @@ export default StyleSheet.create({
     borderRadius: 6,
     marginRight: 12,
   },
+
   userInfo: {
     flexDirection: 'column',
   },
+
   userName: {
     color: Colors.access100,
     fontSize: 14,
@@ -43,6 +47,7 @@ export default StyleSheet.create({
     fontFamily: 'Mark-Pro',
     fontStyle: 'normal',
   },
+
   userAction: {
     color: Colors.neutrol70,
     fontSize: 11,
@@ -51,6 +56,7 @@ export default StyleSheet.create({
     lineHeight: 14,
     fontFamily: 'Mark-Pro',
   },
+  
   amount: {
     fontSize: 14,
     fontWeight: '500',

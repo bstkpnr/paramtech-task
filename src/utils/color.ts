@@ -13,10 +13,6 @@ const Colors={
     neutrol10:'#F5F6F9',
     green100:'#4E6C35',
     neutral100:'#000'
-    
-
-
-
 }
 
 export default Colors;

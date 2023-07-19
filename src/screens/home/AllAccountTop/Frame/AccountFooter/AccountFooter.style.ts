@@ -13,6 +13,7 @@ export default StyleSheet.create({
     width: screenWidth,
     top: 10,
   },
+
   groupContainer: {
     width: 179.5,
     flexDirection: 'column',
@@ -20,6 +21,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     margin: 4,
   },
+
   iconContainer: {
     width: 24,
     height: 24,
@@ -35,6 +37,7 @@ export default StyleSheet.create({
     fontFamily: 'Mark-Pro',
     fontStyle: 'normal',
   },
+  
   line: {
     width: 1,
     height: 40,

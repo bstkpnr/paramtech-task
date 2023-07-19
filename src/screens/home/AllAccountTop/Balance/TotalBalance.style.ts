@@ -6,6 +6,7 @@ export default StyleSheet.create({
     bottom:31,
     flexShrink: 0,
   },
+
   topContent: {
     height: 13,
     justifyContent: 'center',
@@ -13,6 +14,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+
   totalBalanceText: {
     color: Colors.access70,
     fontSize: 10,
@@ -29,6 +31,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignSelf:'center'
   },
+
   balanceText: {
     color: Colors.neutrol0,
     fontSize: 32,
@@ -36,10 +39,12 @@ export default StyleSheet.create({
     fontWeight: '500',
     lineHeight: 40,
   },
+
   smallBalanceText: {
     color: Colors.neutrol0,
     fontSize: 20,
     fontFamily: 'Mark-Pro',
     fontWeight: '500',
   },
+  
 });

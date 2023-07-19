@@ -8,6 +8,7 @@ export default StyleSheet.create({
     backgroundColor: Colors.neutrol0,
     flex: 1,
   },
+  
   actionsContainer:{
     padding:20
   }

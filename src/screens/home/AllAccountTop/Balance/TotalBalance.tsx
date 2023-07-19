@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
 import styles from './TotalBalance.style';
 import Dot from '../../../../assets/Outline.svg';
+
 const TotalBalance = () => {
   return (
     <View style={styles.container}>

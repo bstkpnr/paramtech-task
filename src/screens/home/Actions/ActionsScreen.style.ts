@@ -9,6 +9,7 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
   },
+
   innerContainer: {
     width: '100%',
     alignItems: 'center',
@@ -16,6 +17,7 @@ export default StyleSheet.create({
     paddingHorizontal: 20,
     justifyContent: 'space-between',
   },
+
   titleText: {
     color: Colors.access100,
     fontSize: 14,
@@ -36,6 +38,7 @@ export default StyleSheet.create({
     borderColor: Colors.neutrol20,
     bottom: 10,
   },
+
   boxEmpty: {
     display: 'flex',
     width: 320,
@@ -50,6 +53,7 @@ export default StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
   },
+
   innerBox: {
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -65,6 +69,7 @@ export default StyleSheet.create({
     fontFamily: 'Mark-Pro',
     margin: 20,
   },
+  
   seeAll: {
     color: Colors.neutrol70,
     fontSize: 12,
