@@ -68,6 +68,7 @@ export default StyleSheet.create({
     lineHeight: 18,
     fontFamily: 'Mark-Pro',
     margin: 20,
+    fontStyle:'normal'
   },
   
   seeAll: {
@@ -77,5 +78,6 @@ export default StyleSheet.create({
     lineHeight: 15,
     textAlign: 'right',
     fontFamily: 'Mark-Pro',
+    fontStyle:'normal'
   },
 });
